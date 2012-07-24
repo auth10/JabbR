@@ -59,7 +59,7 @@ namespace JabbR.App_Start
              //   }
 
                 string userIdentity = userIdentityClaim.Value;
-                string username = _firstname + "" + _lastname;
+                string username = _firstname;
                 string email = _email;
                 Claim emailClaim = identity.Claims.SingleOrDefault(c => c.ClaimType == ClaimTypes.Email);
                 if (emailClaim != null)
