@@ -55,6 +55,7 @@ namespace JabbR.Services
             }
         }
 
+
         public string FedAuthCertificateThumbprint
         {
             get
@@ -80,6 +81,14 @@ namespace JabbR.Services
                 bool selectorEnabled = false;
                 bool selectorEnabledParsed = Boolean.TryParse(ConfigurationManager.AppSettings["fedauth.waad.selectorEnabled"], out selectorEnabled);
                 return selectorEnabledParsed && selectorEnabled;
+            }
+        }
+
+        public string FedAuthReply
+        {
+            get
+            {
+                return ConfigurationManager.AppSettings["fedauth.waad.reply"];
             }
         }
     }

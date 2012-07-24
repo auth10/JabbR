@@ -12,6 +12,7 @@ namespace JabbR.Services
 
         string FedAuthIdentityProviderUrl { get; }
         string FedAuthRealm { get; }
+        string FedAuthReply { get; }
         string FedAuthCertificateThumbprint { get; }
         bool FedAuthRequiresSsl { get; }
         bool FedAuthWindowsAzureActiveDirectorySelectorEnabled { get; }

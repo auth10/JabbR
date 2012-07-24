@@ -52,6 +52,7 @@ namespace JabbR.App_Start
 
                 this.Realm = settings.FedAuthRealm;
                 this.Issuer = settings.FedAuthIdentityProviderUrl;
+                this.Reply = settings.FedAuthReply;
                 // if not using the idp selector, redirect straight to idp if not authenticated
                 this.PassiveRedirectEnabled = !settings.FedAuthWindowsAzureActiveDirectorySelectorEnabled; 
                 this.RequireHttps = settings.FedAuthRequiresSsl;
